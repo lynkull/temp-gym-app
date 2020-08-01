@@ -1,0 +1,2 @@
+rootProject.name='Temp Gym App'
+include ':app'
