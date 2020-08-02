@@ -56,7 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:ems="10"
-                android:text="Incline Dumbbell"/>
+                android:text="Incline Dumbbell"
+                android:textColor="#000000" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
 
                 <EditText
@@ -79,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
 
                 <EditText
@@ -88,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
             </LinearLayout>
 
@@ -99,111 +100,30 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/weight3"
+                    android:id="@+id/inclineDumbbellWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/weight2"
+                    android:id="@+id/inclineDumbbellWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/weight"
+                    android:id="@+id/inclineDumbbellWeightSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:ems="10"
-                android:text="Decline Dumbbell"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/set1Reps3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/set1Reps2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/set1Reps"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/weight3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/weight2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/weight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
             </LinearLayout>
         </LinearLayout>
@@ -218,7 +138,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:ems="10"
-                android:text="Lower Abbs"/>
+                android:text="Decline Dumbbell"
+                android:textColor="#000000"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -227,30 +148,30 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/set1Reps3"
+                    android:id="@+id/declineDumbbellRepsSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/set1Reps2"
+                    android:id="@+id/declineDumbbellRepsSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/set1Reps"
+                    android:id="@+id/declineDumbbellRepsSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
             </LinearLayout>
 
@@ -261,111 +182,30 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/weight3"
+                    android:id="@+id/declineDumbbellWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/weight2"
+                    android:id="@+id/declineDumbbellWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/weight"
+                    android:id="@+id/declineDumbbellWeightSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:ems="10"
-                android:text="Tricep Pulldown"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/set1Reps3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/set1Reps2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/set1Reps"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/weight3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/weight2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
-
-                <EditText
-                    android:id="@+id/weight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
             </LinearLayout>
         </LinearLayout>
@@ -380,7 +220,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:ems="10"
-                android:text="Bicep Curl"/>
+                android:text="Lower Abbs"
+                android:textColor="#000000"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -389,30 +230,30 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/set1Reps3"
+                    android:id="@+id/lowerAbbsRepsSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/set1Reps2"
+                    android:id="@+id/lowerAbbsRepsSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/set1Reps"
+                    android:id="@+id/lowerAbbsRepsSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:text="Name" />
             </LinearLayout>
 
@@ -423,30 +264,194 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/weight3"
+                    android:id="@+id/lowerAbbsWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/weight2"
+                    android:id="@+id/lowerAbbsWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/weight"
+                    android:id="@+id/lowerAbbsWeightSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:ems="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number|numberDecimal"
+                    android:text="Name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:text="Tricep Pulldown"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tricepPulldownRepsSet1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/tricepPulldownRepsSet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/tricepPulldownRepsSet3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tricepPulldownWeightSet1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/tricepPulldownWeightSet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/tricepPulldownWeightSet3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:text="Name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:text="Bicep Curl"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/bicepCurlRepsSet1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/bicepCurlRepsSet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/bicepCurlRepsSet3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/bicepCurlWeightSet1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/bicepCurlWeightSet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/bicepCurlWeightSet3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
                     android:text="Name" />
             </LinearLayout>
         </LinearLayout>
