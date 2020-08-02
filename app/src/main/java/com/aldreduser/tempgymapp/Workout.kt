@@ -6,6 +6,5 @@ class Workout {
     var reps:Int = 0
     var weight:Double = 0.0
 
-    var position:Int = 0
     lateinit var bodyCategory:String            //ie. upper front, upper back, lower body
 }
