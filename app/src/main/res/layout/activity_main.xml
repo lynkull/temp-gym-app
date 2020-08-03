@@ -26,7 +26,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/workoutNotes"
+                android:id="@+id/workoutsNotes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -37,16 +37,13 @@
                 app:layout_constraintTop_toBottomOf="@id/category1"
                 app:layout_constraintEnd_toStartOf="@id/category3"/>
 
-            <LinearLayout
+            <include
                 android:id="@+id/category1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                layout="@layout/upper_front_workouts"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/category2"
-                app:layout_constraintBottom_toTopOf="@id/workoutNotes">
-            </LinearLayout>
+                app:layout_constraintBottom_toTopOf="@id/workoutsNotes"/>
 
             <LinearLayout
                 android:id="@+id/category2"
@@ -66,7 +63,7 @@
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/workoutNotes"
+                app:layout_constraintStart_toEndOf="@+id/workoutsNotes"
                 app:layout_constraintTop_toBottomOf="@id/category2">
 
             </LinearLayout>
