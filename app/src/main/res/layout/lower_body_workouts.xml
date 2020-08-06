@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxEms="20"
-                android:text="Lat Pulldown"
+                android:text="Leg Press"
                 android:textColor="#000000" />
 
             <LinearLayout
@@ -62,7 +62,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/latPulldownRepsSet1"
+                    android:id="@+id/legPressRepsSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="3"
@@ -71,7 +71,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/latPulldownRepsSet2"
+                    android:id="@+id/legPressRepsSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="3"
@@ -80,7 +80,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/latPulldownRepsSet3"
+                    android:id="@+id/legPressRepsSet3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -96,7 +96,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/latPulldownWeightSet1"
+                    android:id="@+id/legPressWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -105,7 +105,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/latPulldownWeightSet2"
+                    android:id="@+id/legPressWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -114,7 +114,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/latPulldownWeightSet3"
+                    android:id="@+id/legPressWeightSet3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -133,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxEms="20"
-                android:text="Back Pullback"
+                android:text="Out Calf Raises"
                 android:textColor="#000000" />
 
             <LinearLayout
@@ -143,7 +143,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/backPullbackRepsSet1"
+                    android:id="@+id/outCalfRaisesRepsSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -152,7 +152,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/backPullbackRepsSet2"
+                    android:id="@+id/outCalfRaisesRepsSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -161,7 +161,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/backPullbackRepsSet3"
+                    android:id="@+id/outCalfRaisesRepsSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -177,7 +177,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/backPullbackWeightSet1"
+                    android:id="@+id/outCalfRaisesWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -186,7 +186,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/backPullbackWeightSet2"
+                    android:id="@+id/outCalfRaisesWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -195,7 +195,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/backPullbackWeightSet3"
+                    android:id="@+id/outCalfRaisesWeightSet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -214,7 +214,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxEms="20"
-                android:text="Shoulder Raises"
+                android:text="In Calves Raises"
                 android:textColor="#000000" />
 
             <LinearLayout
@@ -224,7 +224,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/shoulderRaisesRepsSet1"
+                    android:id="@+id/inCalfRaisesRepsSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -233,7 +233,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/shoulderRaisesRepsSet2"
+                    android:id="@+id/inCalfRaisesRepsSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -242,7 +242,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/shoulderRaisesRepsSet3"
+                    android:id="@+id/inCalfRaisesRepsSet3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -258,7 +258,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/shoulderRaisesWeightSet1"
+                    android:id="@+id/inCalfRaisesWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -267,7 +267,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/shoulderRaisesWeightSet2"
+                    android:id="@+id/inCalfRaisesWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -276,7 +276,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/shoulderRaisesWeightSet3"
+                    android:id="@+id/inCalfRaisesWeightSet3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -295,7 +295,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxEms="20"
-                android:text="Upper Abbs"
+                android:text="Leg Extension"
                 android:textColor="#000000" />
 
             <LinearLayout
@@ -305,7 +305,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/upperAbbsRepsSet1"
+                    android:id="@+id/legExtensionRepsSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -314,7 +314,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/upperAbbsRepsSet2"
+                    android:id="@+id/legExtensionRepsSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -323,7 +323,7 @@
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/upperAbbsRepsSet3"
+                    android:id="@+id/legExtensionRepsSet3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -339,7 +339,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/upperAbbsWeightSet1"
+                    android:id="@+id/legExtensionWeightSet1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -348,7 +348,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/upperAbbsWeightSet2"
+                    android:id="@+id/legExtensionWeightSet2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
@@ -357,7 +357,7 @@
                     android:inputType="number|numberDecimal" />
 
                 <EditText
-                    android:id="@+id/upperAbbsWeightSet3"
+                    android:id="@+id/legExtensionWeightSet3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
