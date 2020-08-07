@@ -19,3 +19,26 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+
+
+
+
+
+
+
+/*
+cat 1
+app:layout_constraintBottom_toTopOf="@id/workoutsNotes"
+
+
+cat 2
+app:layout_constraintBottom_toTopOf="@+id/category3"
+
+
+cat 3
+
+
+edit text
+
+
+ */
