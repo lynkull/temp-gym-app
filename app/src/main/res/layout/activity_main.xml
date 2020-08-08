@@ -10,6 +10,7 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +51,9 @@
                 android:id="@+id/workoutsNotes"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="#ADDEC002"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="notes"
