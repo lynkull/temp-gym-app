@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:padding="6dp"
-                android:background="#ADDEC002"
+                android:background="@color/workoutGroupColor"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="notes"
