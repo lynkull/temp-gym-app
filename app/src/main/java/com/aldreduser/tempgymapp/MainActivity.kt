@@ -8,11 +8,15 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
+    private val workouts = listOf<Workout>()
+
     private val upperFrontBodyWorkouts = listOf<String>("Incline Dumbbell", "Decline Dumbbell", "Lower Abbs", "Tricep Pulldown", "Bicep Curl")
     private val upperBackBodyWorkouts = listOf<String>("Lat Pulldown", "Back Pullback", "Shoulder Raises", "Upper Abbs")
     private val lowerBodyWorkouts = listOf<String>("Leg Press", "Out Calf Raises", "In Calf Raises", "Leg Extension")
 
     private val workoutCategories = listOf<List<String>>(upperFrontBodyWorkouts, upperBackBodyWorkouts, lowerBodyWorkouts)
+
+
 
     private var inclineDumbbellName:String = ""
 
@@ -48,6 +52,8 @@ class MainActivity : AppCompatActivity() {
 
             var category:Int = 0
 
+
+
             for (item in 1..workoutCategories[category].size) {
                 //for each workout
                 //for each workout in the category
@@ -67,10 +73,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-            
+
 
         }
 
+    }
+
+    fun storeDataInObjects() {
+        val
     }
 }
 
