@@ -13,10 +13,9 @@ class MainActivity : AppCompatActivity() {
     private val upperFrontBodyWorkouts = listOf<String>("Incline Dumbbell", "Decline Dumbbell", "Lower Abbs", "Tricep Pulldown", "Bicep Curl")
     private val upperBackBodyWorkouts = listOf<String>("Lat Pulldown", "Back Pullback", "Shoulder Raises", "Upper Abbs")
     private val lowerBodyWorkouts = listOf<String>("Leg Press", "Out Calf Raises", "In Calf Raises", "Leg Extension")
-
     private val workoutCategories = listOf<List<String>>(upperFrontBodyWorkouts, upperBackBodyWorkouts, lowerBodyWorkouts)
 
-
+    private val workoutCategoriesNames = listOf<String>("Upper Front Body Workouts", "Upper Back Body Workouts", "Lower Body Workouts")
 
     private var inclineDumbbellName:String = ""
 
@@ -27,32 +26,19 @@ class MainActivity : AppCompatActivity() {
 
     //todo: button to save all
 
-
-    fun loadAllData() {
-        //load all the data
-
-        val inclineDumbbellNameSP = this.getPreferences(Context.MODE_PRIVATE)
-        inclineDumbbellName = inclineDumbbellNameSP.getString("numOfOrdersSPKey", "name").toString()
-
-
-    }
-
-    fun saveAllData() {
-        //save all the data
-
+    fun storeDataInObjects() {
         //loop through the categories
         //loop through the workouts (put them in lists to loop through them)
         //loop though the sets //todo: NOTICE: assumes everything has 3 sets
-
-
 
         for (item in 1..workoutCategories.size) {
             //for each category
             //this should do 3 loops, but it might be wrong (ie. not 3)
 
+            var workoutObject = Workout()
+            workoutObject.name
+
             var category:Int = 0
-
-
 
             for (item in 1..workoutCategories[category].size) {
                 //for each workout
@@ -61,26 +47,10 @@ class MainActivity : AppCompatActivity() {
 
                 for (i in 1..3) {
                     //for each set
-                    val repsSP = this.getPreferences(Context.MODE_PRIVATE)
-                    with(repsSP.edit()) {
-                        putString("workout name", /*reps*/)
-                        commit()
-                    }
-                    val weightSP = this.getPreferences(Context.MODE_PRIVATE)
-                    with(weightSP.edit()) {
-                        putString("workout name", /*weight*/)
-                        commit()
-                    }
+
                 }
             }
-
-
         }
-
-    }
-
-    fun storeDataInObjects() {
-        val
     }
 }
 
@@ -94,4 +64,31 @@ category / workoutName / set1 / weight
 category / workoutName / set2 / weight
 category / workoutName / set3 / weight
 
+ */
+
+
+
+/*
+fun loadAllData() {
+        //load all the data
+
+        val inclineDumbbellNameSP = this.getPreferences(Context.MODE_PRIVATE)
+        inclineDumbbellName = inclineDumbbellNameSP.getString("numOfOrdersSPKey", "name").toString()
+
+
+    }
+
+
+fun save(){
+val repsSP = this.getPreferences(Context.MODE_PRIVATE)
+                    with(repsSP.edit()) {
+                        putString("workout name", /*reps*/)
+                        commit()
+                    }
+                    val weightSP = this.getPreferences(Context.MODE_PRIVATE)
+                    with(weightSP.edit()) {
+                        putString("workout name", /*weight*/)
+                        commit()
+                    }
+                }}
  */
