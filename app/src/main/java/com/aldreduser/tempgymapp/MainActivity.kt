@@ -35,16 +35,17 @@ class MainActivity : AppCompatActivity() {
         for (item in 0 until workoutCategories.size) {
             //for each category
             //this should do 3 loops, but it might be wrong (ie. not 3)
-            val workoutObject = Workout()   //todo: this might be a problem
+            val workoutObject = Workout()   //todo: this might be wrong
             workoutObject.bodyPartCategory = workoutCategoriesNames[item]
 
-            for (j in 1..workoutCategories[item].size) {
+            for (j in 0 until workoutCategories[item].size) {
                 //for each workout
                 //for each workout in the category
-                workoutObject.
-
+                workoutObject.name = workoutCategories[item][j]   //todo: this might be wrong
+                //workoutObject.sets        //for the future
                 for (i in 1..3) {
                     //for each set
+
 
                     //todo: add workout to workouts
                 }

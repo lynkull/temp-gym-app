@@ -4,7 +4,8 @@ class Workout {
 
     //companion object {
         lateinit var name: String
-        var set: Int = 0
+        //var sets: Int = 0
+        //var numOfWorkouts = 0
         var reps: Int = 0
         var weight: Double = 0.0
 
