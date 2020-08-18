@@ -9,7 +9,7 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
-    private val workouts = listOf<Workout>()
+    private val workouts = mutableListOf<Workout>()
 
     private val upperFrontBodyWorkouts = listOf<String>("Incline Dumbbell", "Decline Dumbbell", "Lower Abbs", "Tricep Pulldown", "Bicep Curl")
     private val upperBackBodyWorkouts = listOf<String>("Lat Pulldown", "Back Pullback", "Shoulder Raises", "Upper Abbs")
@@ -25,30 +25,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    //todo: button to save all
-
     fun storeDataInObjects() {
-        //loop through the categories
-        //loop through the workouts (put them in lists to loop through them)
-        //loop though the sets //todo: NOTICE: assumes everything has 3 sets
-
         for (item in 0 until workoutCategories.size) {
             //for each category
-            //this should do 3 loops, but it might be wrong (ie. not 3)
             val workoutObject = Workout()   //todo: this might be wrong
-            workoutObject.bodyPartCategory = workoutCategoriesNames[item]
+            workoutObject.bodyPartCategory = workoutCategoriesNames[item]       //adds category name
 
             for (j in 0 until workoutCategories[item].size) {
-                //for each workout
                 //for each workout in the category
-                workoutObject.name = workoutCategories[item][j]   //todo: this might be wrong
-                //workoutObject.sets        //for the future
+                workoutObject.name = workoutCategories[item][j]     //adds workout name   //todo: this syntax might be wrong
+                var workoutReps = mutableListOf<Int>()
+                var workoutWeight = mutableListOf<Double>() //todo: might have to convert it to double when getting input from the input text box
+                //workoutObject.sets        //to do in the future
                 for (i in 1..3) {
-                    //for each set
+                    //for each set //NOTICE: assumes everything has 3 sets
 
-
-                    //todo: add workout to workouts
+                    //todo: workoutReps.add()       //user input
+                    //todo: workoutWeight.add()     //user input
                 }
+                //todo: add workout to workouts listOf<>()
             }
         }
     }
