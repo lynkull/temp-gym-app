@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 //todo: save the game when user closes the app. Or when user goes to another activity
+//todo: make floating save button
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,23 +32,21 @@ class MainActivity : AppCompatActivity() {
         //loop through the workouts (put them in lists to loop through them)
         //loop though the sets //todo: NOTICE: assumes everything has 3 sets
 
-        for (item in 1..workoutCategories.size) {
+        for (item in 0 until workoutCategories.size) {
             //for each category
             //this should do 3 loops, but it might be wrong (ie. not 3)
+            val workoutObject = Workout()   //todo: this might be a problem
+            workoutObject.bodyPartCategory = workoutCategoriesNames[item]
 
-            var workoutObject = Workout()
-            workoutObject.name
-
-            var category:Int = 0
-
-            for (item in 1..workoutCategories[category].size) {
+            for (j in 1..workoutCategories[item].size) {
                 //for each workout
                 //for each workout in the category
-                category++
+                workoutObject.
 
                 for (i in 1..3) {
                     //for each set
 
+                    //todo: add workout to workouts
                 }
             }
         }

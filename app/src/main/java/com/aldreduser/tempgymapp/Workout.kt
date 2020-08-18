@@ -8,6 +8,6 @@ class Workout {
         var reps: Int = 0
         var weight: Double = 0.0
 
-        lateinit var bodyCategory: String            //ie. upper front, upper back, lower body
+        lateinit var bodyPartCategory: String            //ie. upper front, upper back, lower body
     //}
 }
