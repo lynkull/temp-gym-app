@@ -25,23 +25,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun repsAndWeightInputToArrays() {
+
+    }
+
     fun storeDataInObjects() {
         for (item in 0 until workoutCategories.size) {
             //for each category
-            val workoutObject = Workout()   //todo: this might be wrong
-            workoutObject.bodyPartCategory = workoutCategoriesNames[item]       //adds category name
-
             for (j in 0 until workoutCategories[item].size) {
                 //for each workout in the category
+                val workoutObject = Workout()   //todo: this might be wrong
+                workoutObject.bodyPartCategory = workoutCategoriesNames[item]       //adds category names
+
                 workoutObject.name = workoutCategories[item][j]     //adds workout name   //todo: this syntax might be wrong
-                var workoutReps = mutableListOf<Int>()
-                var workoutWeight = mutableListOf<Double>() //todo: might have to convert it to double when getting input from the input text box
                 //workoutObject.sets        //to do in the future
                 for (i in 1..3) {
                     //for each set //NOTICE: assumes everything has 3 sets
 
                     //todo: workoutReps.add()       //user input
                     //todo: workoutWeight.add()     //user input
+
+                    // maybe put the data in global arrays
                 }
                 //todo: add workout to workouts listOf<>()
             }
