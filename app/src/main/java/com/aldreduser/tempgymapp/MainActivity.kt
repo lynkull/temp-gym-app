@@ -3,6 +3,7 @@ package com.aldreduser.tempgymapp
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.upper_front_workouts.*
 
 //todo: save the game when user closes the app. Or when user goes to another activity
 //todo: make floating save button
@@ -20,16 +21,25 @@ class MainActivity : AppCompatActivity() {
 
     private var inclineDumbbellName:String = ""
 
+    // user input will be put here to then be added to the objects
+    private var tempWorkoutReps = listOf
+    private var tempWorkoutWeight
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
     fun repsAndWeightInputToArrays() {
+        //put this function in another file
+        //input goes into global variables of reps and weights
+        //then it goes into Workout object properties through the storeDataInObjects() function
 
+         inclineDumbbellRepsSet1.text.toString()
     }
 
     fun storeDataInObjects() {
+        //put this function in another file
         for (item in 0 until workoutCategories.size) {
             //for each category
             for (j in 0 until workoutCategories[item].size) {
@@ -42,10 +52,9 @@ class MainActivity : AppCompatActivity() {
                 for (i in 1..3) {
                     //for each set //NOTICE: assumes everything has 3 sets
 
-                    //todo: workoutReps.add()       //user input
-                    //todo: workoutWeight.add()     //user input
+                    //todo: workoutObject.reps.add()         //user input
+                    //todo: workoutObject.weight.add()       //user input
 
-                    // maybe put the data in global arrays
                 }
                 //todo: add workout to workouts listOf<>()
             }
