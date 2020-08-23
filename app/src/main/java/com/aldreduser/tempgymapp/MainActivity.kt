@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
     private var inclineDumbbellName:String = ""
 
     // user input will be put here to then be added to the objects
-    private var tempWorkoutReps = listOf
-    private var tempWorkoutWeight
+    private var tempWorkoutReps = mutableListOf<Int>()
+    private var tempWorkoutWeight = mutableListOf<Double>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,11 +31,46 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun repsAndWeightInputToArrays() {
-        //put this function in another file
+        //todo: put this function in another file
         //input goes into global variables of reps and weights
         //then it goes into Workout object properties through the storeDataInObjects() function
 
-         inclineDumbbellRepsSet1.text.toString()
+        tempWorkoutReps.add( inclineDumbbellRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( inclineDumbbellWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( inclineDumbbellRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( inclineDumbbellWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( inclineDumbbellRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( inclineDumbbellWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( declineDumbbellRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( declineDumbbellWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( declineDumbbellRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( declineDumbbellWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( declineDumbbellRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( declineDumbbellWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( lowerAbbsRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( lowerAbbsWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( lowerAbbsRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( lowerAbbsWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( lowerAbbsRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( lowerAbbsWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( tricepPulldownRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( tricepPulldownWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( tricepPulldownRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( tricepPulldownWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( tricepPulldownRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( tricepPulldownWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( bicepCurlRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( bicepCurlWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( bicepCurlRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( bicepCurlWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( bicepCurlRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( bicepCurlWeightSet3.text.toString().toDouble() )
+
+        //todo: keep this going with the other workouts
     }
 
     fun storeDataInObjects() {
@@ -51,6 +86,7 @@ class MainActivity : AppCompatActivity() {
                 //workoutObject.sets        //to do in the future
                 for (i in 1..3) {
                     //for each set //NOTICE: assumes everything has 3 sets
+                    // NOTICE: workouts have to be in the same order as in repsAndWeightInputToArrays()
 
                     //todo: workoutObject.reps.add()         //user input
                     //todo: workoutObject.weight.add()       //user input
