@@ -3,6 +3,7 @@ package com.aldreduser.tempgymapp
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.upper_back_workouts.*
 import kotlinx.android.synthetic.main.upper_front_workouts.*
 
 //todo: save the game when user closes the app. Or when user goes to another activity
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         //input goes into global variables of reps and weights
         //then it goes into Workout object properties through the storeDataInObjects() function
 
+        //Upper Front Workouts
         tempWorkoutReps.add( inclineDumbbellRepsSet1.text.toString().toInt() )
         tempWorkoutWeight.add( inclineDumbbellWeightSet1.text.toString().toDouble() )
         tempWorkoutReps.add( inclineDumbbellRepsSet2.text.toString().toInt() )
@@ -70,7 +72,39 @@ class MainActivity : AppCompatActivity() {
         tempWorkoutReps.add( bicepCurlRepsSet3.text.toString().toInt() )
         tempWorkoutWeight.add( bicepCurlWeightSet3.text.toString().toDouble() )
 
+        //Upper Back Workouts
+        tempWorkoutReps.add( latPulldownRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( latPulldownWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( latPulldownRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( latPulldownWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( latPulldownRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( latPulldownWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( backPullbackRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( backPullbackWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( backPullbackRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( backPullbackWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( backPullbackRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( backPullbackWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( shoulderRaisesRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( shoulderRaisesWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( shoulderRaisesRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( shoulderRaisesWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( shoulderRaisesRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( shoulderRaisesWeightSet3.text.toString().toDouble() )
+
+        tempWorkoutReps.add( upperAbbsRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( upperAbbsWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( upperAbbsRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( upperAbbsWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( upperAbbsRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( upperAbbsWeightSet3.text.toString().toDouble() )
+
         //todo: keep this going with the other workouts
+
+
+
     }
 
     fun storeDataInObjects() {
