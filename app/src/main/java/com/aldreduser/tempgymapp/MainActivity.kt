@@ -3,6 +3,7 @@ package com.aldreduser.tempgymapp
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.lower_body_workouts.*
 import kotlinx.android.synthetic.main.upper_back_workouts.*
 import kotlinx.android.synthetic.main.upper_front_workouts.*
 
@@ -101,10 +102,34 @@ class MainActivity : AppCompatActivity() {
         tempWorkoutReps.add( upperAbbsRepsSet3.text.toString().toInt() )
         tempWorkoutWeight.add( upperAbbsWeightSet3.text.toString().toDouble() )
 
-        //todo: keep this going with the other workouts
+        //Lower Body Workouts
+        tempWorkoutReps.add( legPressRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( legPressWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( legPressRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( legPressWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( legPressRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( legPressWeightSet3.text.toString().toDouble() )
 
+        tempWorkoutReps.add( outCalfRaisesRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( outCalfRaisesWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( outCalfRaisesRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( outCalfRaisesWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( outCalfRaisesRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( outCalfRaisesWeightSet3.text.toString().toDouble() )
 
+        tempWorkoutReps.add( inCalfRaisesRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( inCalfRaisesWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( inCalfRaisesRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( inCalfRaisesWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( inCalfRaisesRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( inCalfRaisesWeightSet3.text.toString().toDouble() )
 
+        tempWorkoutReps.add( legExtensionRepsSet1.text.toString().toInt() )
+        tempWorkoutWeight.add( legExtensionWeightSet1.text.toString().toDouble() )
+        tempWorkoutReps.add( legExtensionRepsSet2.text.toString().toInt() )
+        tempWorkoutWeight.add( legExtensionWeightSet2.text.toString().toDouble() )
+        tempWorkoutReps.add( legExtensionRepsSet3.text.toString().toInt() )
+        tempWorkoutWeight.add( legExtensionWeightSet3.text.toString().toDouble() )
     }
 
     fun storeDataInObjects() {
