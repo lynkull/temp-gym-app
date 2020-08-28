@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun repsAndWeightInputToArrays() {
-        //todo: put this function in another file
+        //todo: put this function in another file (use parameters)
         //input goes into global variables of reps and weights
         //then it goes into Workout object properties through the storeDataInObjects() function
 
